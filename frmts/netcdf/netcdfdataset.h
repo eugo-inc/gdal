@@ -190,7 +190,7 @@ static const int NCDF_DEFLATE_LEVEL = 1; /* best time/size ratio */
  * It's unlikely that this naming change will be backported to the previous
  * netcdf-c releases, so we have to account for both macros variants. We do so
  * by introducing our own macro, `NCDF_FillValue`, and using that in places
- * where the `_FillValue` previously was. If `NC_FillValue` is defined by
+ * where `_FillValue` was previously used. If `NC_FillValue` is defined by
  * `netcdf.h`, `NCDF_FillValue` expands to it and, if it's not, to `_FillValue`.
  *
  * References:
